@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	var str = "즐거운 자바스크립트 공부"; // new String("즐~부");
+	var ch = str.charAt(4);
+	document.write("ch : " + ch + "<br>");
+	document.write(str.indexOf("자바") + "<br>");
+	document.write(str.indexOf("HTML") + "<br>");
+	document.write(str.slice(5, 7) + "<br>");
+	document.write(str.slice(5, -3) + "<br>");
+	document.write(str.slice(5) + "<br>");
+	
+	// substring에는 음수가 들어가지 못함
+	document.write("substring : " + str.substring(5, 7) + "<br>");
+	document.write("substr : " + str.substr(5, 7) + "<br>"); // 가져올 개수
+	
+	var word = "I Can Do It!";
+	document.write(word.toUpperCase() + "<br>");
+	document.write(word.toLowerCase() + "<br>");
+	
+	
+</script>
+</body>
+</html>

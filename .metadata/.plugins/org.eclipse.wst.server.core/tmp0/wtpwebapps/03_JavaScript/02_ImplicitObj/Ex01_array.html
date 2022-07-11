@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a = new Array(3); 
+	a[0]=10;
+	a[1]=20;
+	
+	document.write(a.length+"<br>");
+	for(var i=0;i<a.length;i++){
+		document.write(a[i] +" ");
+	}
+	document.write("<br>---<br>");
+	
+	var b = new Array('one','two','three');
+	document.write(b.length+"<br>");
+	for(var i=0;i<b.length;i++){
+		document.write(b[i] +" ");
+	}
+	document.write("<br>---<br>");
+	for(x in b){
+		document.write(b[x]+"<br>");
+	}
+	
+	
+	document.write("<br>---<br>");
+	
+	var c = Array(3,4,5); 
+		
+	document.write(c.length+"<br>");
+	for(var i=0;i<c.length;i++){
+		document.write(c[i] +" ");
+	}
+	document.write("<br>---<br>");
+	
+	
+	var d = ['rose','tulip',"lily","cosmos"];
+	for(var i=0;i<d.length;i++){
+		document.write(d[i] +" ");
+	}
+	document.write("<br>---<br>");
+	document.write(d +"<br>" );
+	document.write(d.toString() +"<br>" );
+	
+	for( f in d){
+		document.write(f+"/" + d[f] + "<br>");
+	}
+	
+	var e = [123, 0.98, "javascript" , true];
+	for( x in e){
+		document.write(e[x]  + "<br>");
+	}
+</script>
+</body>
+</html>

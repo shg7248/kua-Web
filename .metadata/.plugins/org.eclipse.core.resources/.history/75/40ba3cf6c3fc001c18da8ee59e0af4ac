@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>엘리먼트의 어트리뷰트 값을 가져오고, 설정하기</title>
+	<style>
+		body{
+			text-align:center;
+			margin:0px auto;
+		} 
+		img {
+			padding: 20px;
+		}
+		
+		div {
+			color: blue;
+			font-size: 30px
+		}
+		#abc{
+			background:yellow;
+		}
+	</style>
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		
+		$('img:eq(0)').attr('src', '../images/im0.jpg')
+						.attr('title', '강아지 이미지')
+						.css('border', '2px solid red');
+		
+/* 		$('img:eq(1)').attr('id', 'abc')
+						.attr('src', '../images/car1.jpg') */
+		
+//		document.querySelector('img').setAttribute('src', '../images/c.jpg');
+	});
+	
+</script>
+</head>
+<body>
+		<img /> <img /> 
+		<img /> <img /> 
+		<div>
+			<B> 어트리뷰트 연습</B><br>
+			<span></span>
+		</div>
+		<br>
+		<button id="btn1">어트리뷰트 값 제거하기</button>
+</body>
+</html>

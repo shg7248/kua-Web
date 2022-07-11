@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="myform" style="display:inline-block;">
+		<input type="text" size="8" name="first"/>
+		<select name="calc"></select>
+		<input type="text" size="8" name="second"/>
+		<br><br><br><br><br><br>
+		<input type="button" value="닫기" onclick="calclose()"/>
+	</form>
+<script type="text/javascript">
+
+	var calArr = ["더하기", "빼기", "곱하기", "나누기"];
+	
+	window.onload = function() {
+		var select = myform.calc;
+		for(var idx in calArr) {
+			select.options[idx] = new Option(calArr[idx]);
+		}
+	}
+	
+	function calclose() {
+		
+		var first = myform.first.value;
+		if(isNaN(first)) {
+			alert("숫자가 아닙니다");
+			return false;
+		}
+		if(first.length == 0) {
+			alert("숫자를 입력하세요");
+			return false;
+		}
+		
+		var second = myform.second.value;
+		if(isNaN(second)) {
+			alert("숫자가 아닙니다");
+			return false;
+		}
+		if(second.length == 0) {
+			alert("숫자를 입력하세요");
+			return false;
+		}
+		
+		var selectedIndex = myform.calc.selectedIndex;
+/* 		
+		var result = 0;
+		switch(selectedIndex) {
+		case 0:
+			result = eval(first + "+" + second);
+			break;
+		case 1:
+			result = eval(first + "-" + second);
+			break;
+		case 2:
+			result = eval(first + "*" + second);
+			break;
+		case 3:
+			result = eval(first + "/" + second);
+			break;
+		}
+		 */
+		alert("dsfdfsdfsdfsdfs");
+		
+/* 		opener.myform.result.value = result; */
+		self.close();
+	}
+</script>
+</body>
+</html>

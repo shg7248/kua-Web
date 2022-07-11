@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	.spotlight {
+		background-color: yellow;
+	}
+	
+	.redText {
+		color: red;
+	}
+	
+	.largeText {
+		font-size: 30px;
+	}
+	
+	.under {
+		text-decoration: underline;
+	}
+</style>
+<script type="text/javascript" src="/js/jQuery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		alert(1);
+	});
+</script>
+</head>
+<body>
+	<span id="simple1">simple</span>
+	<div class="simple1">jQuery</div>
+	<span id="simple2">Basic</span>
+	<div id="simple3">Example</div>
+</body>
+</html>

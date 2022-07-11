@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		var sum = 0;
+		$('td:nth-child(2)').each(function() {
+			var num = parseInt($(this).text());
+			if(num >= 80) {
+				$(this).css('background', 'cyan');
+			}
+			else if(num > 30) {
+				$(this).css('background', 'yellow');
+			}
+			else {
+				$(this).css('background', 'red');
+			}
+			
+			sum += num;
+		});
+		
+		$('#result').append(sum);
+	});
+</script>
+</head>
+<body>
+<table class="nameTable" border="1">
+	<tr>
+		<th width="100">이름</th>
+		<th width="100">점수</th>
+		<th width="100">성별</th>
+	</tr>
+	<tr>
+		<td>조권</td>
+		<td>20</td>
+		<td>남</td>
+	</tr>
+	<tr>
+		<td>아이유</td>
+		<td>40</td>
+		<td>여</td>
+	</tr>
+	<tr>
+		<td>태연</td>
+		<td>80</td>
+		<td>여</td>
+	</tr>
+	<tr>
+		<td>유리</td>
+		<td>60</td>
+		<td>여</td>
+	</tr>
+	<tr>
+		<td>윤아</td>
+		<td>70</td>
+		<td>여</td>
+	</tr>
+	<tr>
+		<td>강호동</td>
+		<td>30</td>
+		<td>남</td>
+	</tr>
+	<tr>
+		<td>이효리</td>
+		<td>100</td>
+		<td>여</td>
+	</tr>
+</table>
+<div class="result"></div>
+</body>
+</html>
+
+<!-- 
+	
+ -->

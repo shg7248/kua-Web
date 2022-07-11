@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>열기 버튼을 클릭하세요(start.html)</h2>
+	<form name="myform">
+		결과 : <input type="text" id="result"> <br><br>
+		<input type="button" value="열기" onclick="calc('Ex04_end_송학관.html')"/>
+	</form>
+	
+<script type="text/javascript">
+	function calc(url) {
+		var name = "pop";
+		var options = "width=400 height=300";
+		
+		window.open(url, name, options);
+	}
+</script>
+</body>
+</html>

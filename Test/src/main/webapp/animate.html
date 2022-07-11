@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function Person(name) {
+            this.name = name;
+        }
+
+        Person.prototype.sleep = function() {
+            console.log(`${this.name}은 잠자기 시작했습니다.`);
+        }
+
+        function Song(name) {
+            this.name = name;
+        }
+
+        console.log(Object.create(Person.prototype))
+        Song.prototype = Object.create(Person.prototype);
+
+        Song.prototype.lean = function() {
+            console.log(`${this.name}은 배우기 시작했습니다.`);  
+        }
+
+        var song = new Song("학관");
+
+        console.log(song);
+
+
+        class Person2 {
+            constructor(name) {
+                this.name = name;
+            }
+
+            sleep() {
+                console.log(`${this.name}은 잠자기 시작했습니다.`);
+            }
+        }
+
+        class Song2 extends Person2 {
+            constructor(name) {
+                super(name);
+            }
+
+            lean() {
+                console.log(`${this.name}은 배우기 시작했습니다.`);  
+            }
+        }
+
+        console.log(new Song2("학관"));
+
+
+
+        function makeObj(property) {
+            
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

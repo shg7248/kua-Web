@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body onload="receiver()">
+<img src="../images/pop1.jpg">
+	<form name="myform">
+		<input type="text" name="child_id" value="hong"><br>
+		<input type="text" name="child_password" ><br>
+		<input type="button" value="닫기" onclick="closeButton()">
+	</form>
+<script>
+	function receiver() {
+		alert(opener.forms);
+	}
+	
+	function closeButton() {
+		opener.myform.id.value = myform.child_id.value;
+		opener.myform.password.value = myform.child_password.value
+		self.close();
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex04_RegularExpression.html</title>
+</head>
+<body>
+	<form>
+		<input type="text" name="code">
+		<input type="button" value="클릭" onclick="check()">
+	</form>
+<script type="text/javascript">
+	function check(){
+		
+		var forms = window.document.forms[0];
+		
+	}
+</script>
+</body>
+</html>

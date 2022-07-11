@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	span{
+		color: blue;
+	}
+</style>
+</head>
+<body>
+<script type="text/javascript">
+	var myName = prompt("이름을 입력하세요", "");
+	/* 
+		확인 클릭 : 입력한 값이 변수에 들어온다.
+		취소 클릭 : null이 변수에 들어온다.
+	 */
+	 
+/*  	 if(myName == "") {
+ 		document.write("이름 누락됐습니다.");
+	 }
+	 else if(myName == null) {
+		document.write("취소 클릭했습니다.");
+	 }
+	 else {
+		document.write("나의 이름은 <span>" + myName + "</span>입니다.<br>");
+	 } */
+	 
+	 console.log(typeof(myName));
+	 console.log(typeof(undefined));
+/* 
+	이름 입력 => 확인 => 나의 이름은 아이유 입니다.
+	취소 => 취소 클릭했습니다.
+	이름 입력X => 이름 누락됐습니다.
+	   */
+</script>
+</body>
+</html>
+<!-- 
+Java 주석 : // , /*  */
+오라클 주석 : --
+HTML 주석 : <!-- -->
+
+<!-- 
+CSS 주석 : /*  */
+Javascript 주석 : //, /*  */
+ -->

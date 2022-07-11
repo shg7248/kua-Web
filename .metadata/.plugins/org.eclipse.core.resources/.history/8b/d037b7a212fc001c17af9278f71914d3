@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex04_RegularExpression.html</title>
+</head>
+<body>
+	<form>
+		<input type="text" name="code">
+		<input type="button" value="클릭">
+	</form>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex01_add.html</title>
+<style>
+div {
+	width: 60px;
+	height: 60px;
+	margin: 10px;
+	float: left;
+}
+
+p {
+	clear: left;
+}
+
+.redBorder {
+	border: 2px solid red
+}
+
+.yellow {
+	background: yellow
+}
+</style>
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('button').click(function() {
+			// $('div').addClass('redBorder').add('p').addClass('yellow');
+			$('div').addClass('redBorder yellow')
+		});
+	});
+</script>
+</head>
+<body>
+	<div></div>
+	<div></div>
+	<div></div>
+	<p>redBorder 클래스의 적용은 받지 못하고 yellow 클래스의 적용 받음</p>
+	<button>클릭</button>
+</body>
+</html>
+
+

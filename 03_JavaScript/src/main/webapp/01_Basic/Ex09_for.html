@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+
+	var arr = [1,2,3,4,5,6,7,8,9,10];
+	
+	var result = arr.reduce((x, y) => x += y);
+	
+	console.log(result);
+
+	var sum = 0;
+	for(var i = 1; i <= 10; i++) {
+		document.write(i + "<br>");
+		sum += i;
+	}
+	
+/* 	
+ 	1
+	2
+	3
+	4
+	5
+	6
+	7
+	8
+	9
+	10
+	총합 : 55 
+*/
+	
+	document.write("총합 : " + sum);
+	
+	document.write("<hr>")
+	
+	for(var i = 6; i >= 1; i--) {
+		document.write("<h" + i + "> h" + i + " 재미있는 자바스크립트</h" + i + "> <br>");
+
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		
+		$.get('item.xml', function(data) {
+			
+			$('#fruit').append('<tr><td>id</td><td>name</td><td>price</td><td>decription</td></tr>');
+			
+			$(data).find('item').each(function() {
+				console.log(this);
+				$('table').append(
+					"<tr><td>"+ this.id +"</td>" + 	
+					"<td>"+ $(this)[0].name +"</td>" + 		
+					"<td>"+ $(this)[0].price +"</td>" + 		
+					"<td>"+ this.description +"</td></tr>"	
+				);
+			});
+		});
+	});
+
+</script>   
+</head>
+<body>
+	<h3>과일의 특성 조사</h3>
+	<table id="fruit" border=1></table>
+</body>
+</html>

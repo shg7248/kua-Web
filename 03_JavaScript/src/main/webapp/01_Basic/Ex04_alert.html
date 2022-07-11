@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>여름은 더운 계절입니까?</h2>
+	
+	<form>
+		<input type="button" value="예" onclick="summer(true)">
+		<input type="button" value="아니오" onclick="summer(false)">
+	</form>
+
+	<script type="text/javascript">
+		alert("자바스크립트 너무 재미있음");
+		
+		function summer(check) {	// summer 함수 정의 check=true/false
+			if(check) {
+				alert("여름은 더운 계절입니다.")
+			}
+			else {
+				alert("여름은 시원한 계절입니다.")
+			}
+		}
+	</script>
+</body>
+</html>
+
+<!-- 
+대화상자
+prompt
+confirm
+alert
+ -->

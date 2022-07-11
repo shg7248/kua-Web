@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex08_hasClass_toggle.html</title>
+<style>
+p.a, p.c {
+	cursor: pointer;
+	font-weight: bold;
+	color: blue;
+	font-size: 14pt;
+}
+
+.toggleStyle {
+	color: red;
+}
+
+.newStyle {
+	color: cyan;
+}
+</style>
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('p.a').click(function() {
+			$('p.b').toggle(500);
+		})
+	});
+</script>
+</head>
+<body>
+	<p class="a">남자배우 인기순위</p>
+	<p class="b">이승기</p>
+	<p class="b">김수현</p>
+	<p class="b">소지섭</p>
+	<p class="b">하정우</p>
+	<p class="b">이광수</p>
+	<hr />
+	<p class="c">여자배우 인기순위</p>
+	<p class="d">하지원</p>
+	<p class="d">전지현</p>
+	<p class="d">김태희</p>
+	<p class="d">공효진</p>
+	<p class="d">심은경</p>
+	<br>
+	<div class="toggleStyle">div영역입니다.</div>
+</body>
+</html>
+
+

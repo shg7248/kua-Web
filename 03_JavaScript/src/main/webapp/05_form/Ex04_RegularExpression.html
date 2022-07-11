@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex04_RegularExpression.html</title>
+</head>
+<body>
+	<form>
+		<input type="text" name="code">
+		<input type="button" value="클릭" onclick="check()">
+	</form>
+<script type="text/javascript">
+	function check(){
+		
+		var forms = window.document.forms[0];
+		var value = forms.code.value;
+		
+		var reg = /^\d{3}-?\d{1,3}$/;
+		var jumin = /^\d{6}-?[1-4]\d{6}$/;
+		var birth = /^\d{4}[\s/\.-][01]?\d[-/\.][0-3]?\d$/;
+		var password = /^[a-zA-Z0-9_]{5, 10}$/;
+		
+		
+		if(reg.test(value)) {
+			alert("맞다아")
+		}
+		else {
+			alert("틀리다아아")
+		}
+	}
+</script>
+</body>
+</html>

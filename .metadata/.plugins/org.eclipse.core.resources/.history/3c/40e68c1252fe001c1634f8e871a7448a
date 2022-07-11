@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		
+		$('#d1').magnify();
+	});
+</script>  
+</head>
+<body>
+<a href="../images/bigimg0.jpg" id="d1">
+	<img src="../images/smallimg0.jpg" border="3">
+</a>
+</body>
+</html>

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02_bind.html</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function() {
+
+			// 이벤트를 묶어서 사용할 수 있음
+			/* 
+			$('img').bind('click mouseover', function(v) {
+				alert(1);
+			})
+			 */
+			/* 
+			$('img').mouseover(function() {
+				alert(1);
+			});
+
+			$('img').click(function() {
+				alert(1);
+			});
+			 */
+			 
+			$('img').bind('click mouseover', function(v) {
+				alert(1);
+			})
+		});
+	</script>
+</head>
+<body>
+	<img src="../images/but1.gif">
+</body>
+</html>
+
+

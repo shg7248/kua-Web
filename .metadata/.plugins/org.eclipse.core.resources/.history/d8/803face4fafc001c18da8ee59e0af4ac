@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02_bind.html</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function() {
+
+			// 이벤트를 묶어서 사용할 수 있음
+			/* 
+			$('img').bind('click mouseover', function(v) {
+				alert(1);
+			})
+			 */
+			/* 
+			$('img').mouseover(function() {
+				alert(1);
+			});
+
+			$('img').click(function() {
+				alert(1);
+			});
+			 */
+			 
+			var cnt = 0;
+			$('img').bind({
+				'mouseover': function() {
+					$('img').attr('src', '../images/but2.gif');
+					cnt++;
+					if(cnt == 3){
+						$('img').unbind();
+					}
+				},
+				'mouseout' : function() {
+					$('img').attr('src', '../images/but1.gif');
+				},
+				'click': function() {
+					alert("클릭했습니다");
+				}
+			});
+		});
+	</script>
+</head>
+<body>
+	<img src="../images/but1.gif">
+</body>
+</html>
+
+

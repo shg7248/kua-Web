@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	var su = prompt("정수를 입력하세요",10);
+	document.write(su + 3 +"<br>"); 
+	document.write(Number(su) + 3 +"<br>"); 
+	document.write(parseInt(su) + 3 +"<br>"); 
+	document.write(eval(su) + 3 +"<br>"); 
+	document.write(+su + 3 +"<br>"); 
+	
+	document.write("----------------<br>");
+	
+	document.write(Number("1.23") + "<br>");
+	document.write(parseInt("1.73") + "<br>");
+	document.write(eval("1.23") + "<br>");
+	
+	
+	document.write("----------------<br>");
+	
+	document.write(Number("15+3*4")+"<br>"); // Not a Number 
+	document.write(parseInt("15+3*4")+"<br>");
+	document.write(eval("15+3*4")+"<br>");
+</script>
+</body>
+</html>

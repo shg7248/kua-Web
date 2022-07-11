@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<form name="myform" action="abc.jsp" method="get">
+		<!-- 
+			작성한 값을 value라고 한다.
+			name에 value가 들어간다.
+		 -->
+		아이디 : <input type="text" name="id"> <br>
+		비밀번호 : <input type="text" name="pw"> <br>
+		연락처 : <input type="text" name="tel" size="10" maxlength="11"> <br>
+		
+		좋아하는 노래를 선택하세요<br>
+		<input type="radio" name="song" value="낙하">낙하
+		<input type="radio" name="song" value="다이너소어">다이너소어
+		<input type="radio" name="song" value="빨간맛">빨간맛
+		<input type="radio" name="song" value="버터">버터
+		<br>
+		
+		좋아하는 영화 선택하세요<br>
+		<input type="radio" name="movie" value="해리포터">해리포터
+		<input type="radio" name="movie" value="어벤져스">어벤져스
+		<input type="radio" name="movie" value="탑건">탑건
+		<input type="radio" name="movie" value="번죄도시">범죄도시
+		<br>
+		
+		좋아하는 과일 여러개 선택하세요<br>
+		<label for="apple">sdfds</label>
+		<input type="checkbox" name="fruit" value="사과" id="apple">사과
+		<input type="checkbox" name="fruit" value="자두">자두
+		<input type="checkbox" name="fruit" value="복숭아" checked>복숭아
+		<input type="checkbox" name="fruit" value="포도">포도
+		<br><br>
+		
+		취미를 선택하세요<br>
+		<select name="hobby">
+			<option value="수영">수영</option>
+			<option value="달리기" selected>달리기</option>
+			<option value="게임">게임</option>
+			<option value="그림그리기">그림그리기</option>
+			<option value="등산">등산</option>
+		</select>
+		<br><br>
+		
+		<input type="reset" value="취소" />
+		<input type="submit" value="등록" onclick="return check()"/>
+		<input type="button" value="버튼" />
+	</form>
+<script type="text/javascript">
+	function check() {
+/* 		var id = document.forms[0].id.value;
+		if(id.length == 0) {
+			alert("아이디 누락");
+			return false;
+		}
+		
+		var pw = document.forms[0].pw;
+		if(pw.value.length == 0) {
+			alert("비밀번호 누락");
+			return false;
+		}
+		
+		inputPw = myform.pw.value;
+		if(inputPw.length < 3 || inputPw.length > 5) {
+			alert("패스워드는 3자~5자로 입력하세요.");
+			return false;
+		}
+		
+		inputTel = myform.tel.value;
+		if(inputTel.length == 0) {
+			alert("연락처 누락");
+			return false;
+		}
+		
+		if(isNaN(inputTel)) {
+			alert("연착처는 숫자만 입력 가능");
+			return false;
+		}
+		
+		songLength = myform.song.length;
+		alert("songLength : " + songLength);
+		
+		flag = false;
+		for(var i = 0; i < songLength; i++) {
+			if(myform.song[i].checked) {
+				flag = true;
+			}
+		}
+		
+		if(flag == false) {
+			alert("song 하나는 선택하셔야 합니다.");
+			return false;
+		} */
+		
+/* 		movieFlag = false;
+		var movies = myform.movie;
+		for(var i = 0; i < movies.length; i++) {
+			if(movies[i].checked) {
+				movieFlag = true;
+			}
+		}
+		
+		if(!movieFlag) {
+			alert("좋아하는 영화를 선택해주세요.");
+			return false;
+		}
+		
+		fruitFlag = false;
+		fruit = myform.fruit;
+		for(var i = 0; i < fruit.length; i++) {
+			if(fruit[i].checked) {
+				fruitFlag = true;
+				break;
+			}
+		}
+		if(!fruitFlag) {
+			alert("좋아하는 과일을 선택해주세요.")
+			return false;
+		} */
+	}
+</script>
+</body>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex03_window_open.html</title>
+</head>
+<body>
+	<form name="myform">
+		<input type="text" name="id" ><br>
+		<input type="text" name="password" ><br>
+		<input type="button" value="팝업창열기" onclick="openWin()">
+	</form>
+<script type="text/javascript">
+	function openWin() {
+		
+		var url = "Ex03_popup.html";
+		var name = "myPop"
+		var options = "width=300 height=500 top=100 left=400"
+		
+		window.open(url, name, options);
+	}
+</script>
+</body>
+</html>

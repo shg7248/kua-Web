@@ -1,0 +1,80 @@
+
+function check() {
+	
+	var form = window.document.myform;
+	
+	var title = form.title;
+	if(title.value.length == 0) {
+		alert("제목을 입력하세요");
+		title.focus();
+		return false;
+	}
+	
+	var author = form.author;
+	if(author.value.length == 0) {
+		alert("저자를 입력하세요");
+		author.focus();
+		return false;
+	}
+	
+	var publisher = form.publisher;
+	if(publisher.value.length == 0) {
+		alert("출판사를 입력하세요");
+		publisher.focus();
+		return false;
+	}
+	
+	var price = form.price;
+	if(price.value.length == 0) {
+		alert("가격을 입력하세요");
+		price.focus();
+		return false;
+	}
+	if(isNaN(price.value)) {
+		alert("가격은 숫자로 입력하세요");
+		price.focus();
+		return false;
+	}
+	
+	var date = form.date;
+	if(date.value.length == 0) {
+		alert("입고일을 선택하세요");
+		date.focus();
+		return false;
+	}
+	
+	var k_flag = false;
+	var kind = form.kind;
+	for(var i in kind) {
+		if(kind[i].checked) {
+			k_flag = true;
+			break;
+		}
+	}
+	if(!k_flag) {
+		alert("배송비를 선택하세요");
+		kind.focus();
+		return false;
+	}
+	
+	var b_flag = false;
+	var bookstore = form.bookstore;
+	for(var i in bookstore) {
+		if(bookstore[i].checked) {
+			b_flag = true;
+		}
+	}
+	if(!b_flag) {
+		alert("서점은 최소 한개는 선택하세요")
+		bookstore.focus();
+		return false;
+	}
+	
+	var count = form.count;
+	var index = count.selectedIndex;
+	if(index == 0) {
+		alert("보유수량을 선택하세요.");
+		count.focus();
+		return false;
+	}
+}

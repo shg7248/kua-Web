@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02_after_insertAfter.html</title>
+	<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			$('header').after('<div>좋아하는 과일 : 사과 </div>')
+			$('header').after('<div>좋아하는 과일 : 복숭아 </div>')
+			$('header').after('<div>좋아하는 과일 : 수박 </div>')
+		});
+	</script>
+</head>
+
+<!-- 
+	after : 형제로 추가
+ -->
+<body>
+  
+	<header> <h1> 과일 </h1></header>
+	<footer> <h3> <i> jquery </i> </h3> </footer>
+	
+</body>
+</html>
+

@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02_bind.html</title>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			
+		});
+	</script>
+</head>
+<body>
+	<img src="../images/but1.gif">
+</body>
+</html>
+
+

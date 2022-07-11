@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex01_append_prepend.html</title>
+<style type="text/css">
+div {
+	float: left;
+	margin: 25px;
+}
+</style>
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		
+	});
+</script>
+</head>
+<body>
+	<div>
+		<b> 내가 좋아하는 과일 </b>
+		<ul id="fruit_list"></ul>
+	</div>
+
+	<div>
+		<b> 갖고 싶은 차 </b>
+		<ul id="car_list"></ul>
+	</div>
+
+	<div>
+		<b> 내가 좋아하는 과일 </b>
+		<ul id="fruit_list2"></ul>
+	</div>
+
+	<div>
+		<b> 갖고 싶은 차 </b>
+		<ul id="car_list2"></ul>
+	</div>
+</body>
+</html>
+
+	
+	
+	

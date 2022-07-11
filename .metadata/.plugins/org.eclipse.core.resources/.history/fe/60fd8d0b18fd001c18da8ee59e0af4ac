@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<div class="nav">
+			
+			</div>
+		</div>
+	</header>
+</body>
+</html>

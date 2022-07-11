@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex11_empty_remove.html</title>
+<style type="text/css">
+div {
+	background-color: Yellow;
+	width: 30%;
+}
+</style>
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(function() {
+		
+		$('#btnEmpty').click(function() {
+			$('div').empty();			// div 안에 있는 내용이 삭제됨
+			$('div').append("<b>Hello~</b>");
+		});
+		
+		$('#btnRemove').click(function() {
+			$('div').empty();			// div 안에 있는 내용이 삭제됨
+			$('div').append("<b>Hello~</b>");
+		});
+	});
+</script>
+    </script>
+</head>
+<body>
+	<div> 
+		<p>jQuery</p>
+		<p>Ajax</p>
+	</div>
+	<input type="button" id="btnEmpty" value="영역의 내용 삭제" />
+	<br />
+	<input type="button" id="btnRemove" value="영역 자체를 삭제" />
+</body>
+</html>
+
+
+

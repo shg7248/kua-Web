@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var age = 30;
+		document.write("나이: " + age + "<br>");
+		
+		function test() { // test 함수 정의
+			document.write("나이1 : " + age + "<br>")	
+			var age = 50; // 지역볁수
+			document.write("나이2 : " + age + "<br>")	
+		} // test
+		
+		test(); // test 함수 호출
+		document.write("나이10 : " + age + "<br>")	
+		
+		// var 붙여야 되는 경우
+		// var 안붙여도 되는 경우
+	</script>
+</body>
+</html>

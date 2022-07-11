@@ -1,0 +1,68 @@
+
+function check() {
+	
+	var form = window.document.myform;
+	
+	var title = form.title;
+	if(title.value.length == 0) {
+		alert("제목을 입력하세요");
+		title.focus();
+		return false;
+	}
+	
+	var author = form.author;
+	if(author.value.length == 0) {
+		alert("저자를 입력하세요");
+		author.focus();
+		return false;
+	}
+	
+	var publisher = form.publisher;
+	if(publisher.value.length == 0) {
+		alert("출판사를 입력하세요");
+		publisher.focus();
+		return false;
+	}
+	
+	var price = form.price;
+	if(price.value.length == 0) {
+		alert("가격을 입력하세요");
+		price.focus();
+		return false;
+	}
+	if(isNaN(price.value)) {
+		alert("가격은 숫자로 입력하세요");
+		price.focus();
+		return false;
+	}
+	
+	var date = form.date;
+	if(date.value.length == 0) {
+		alert("입고일을 선택하세요");
+		date.focus();
+		return false;
+	}
+	
+	var k_flag = false;
+	var kind = form.kind;
+	for(var i in kind) {
+		if(kind[i].checked) {
+			k_flag = true;
+			break;
+		}
+	}
+	if(!k_flag) {
+		alert("배송비를 선택하세요")
+		return false;
+	}
+	
+	var c_flag = false;
+	var count = form.count;
+	for(var i in count) {
+		if(count[i].checked) {
+			c_flag = true;
+		}
+	}
+	
+	return false;
+}

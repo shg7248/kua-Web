@@ -1,0 +1,47 @@
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ex03_attr_makeImage.html</title>
+	<style type="text/css">
+		#myarea img{
+			width:120px;
+			height: 120px;
+		}
+	</style>
+	<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#makeimage').click(function() {
+				var result = "";
+				$('input:checked').each(function() {
+					var idVal = $(this).attr("id");
+					
+					result += "<img src='../images/" + idVal + ".jpg'>";
+				});
+				$('#myarea').append(result);
+			});
+		});
+	</script>	
+</head>
+<body>
+	<p>
+		<input id="Koala" type="checkbox"/>코알라  
+		<input id="Penguins" type="checkbox" checked="checked"/>펭귄
+		<input id="Desert" type="checkbox" checked="checked" />사막
+	</p>
+	<p><input id="makeimage" type="button" value="그림 만들기" /></p>
+	
+	<div id='myarea'></div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+

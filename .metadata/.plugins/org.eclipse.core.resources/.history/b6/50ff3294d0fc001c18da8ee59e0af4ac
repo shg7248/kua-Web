@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ex06_removeClass_remove.html</title>
+	<style>
+		p {   margin: 4px;  font-size: 20px;  font-weight: bold;}
+		.red {   color: red;} 
+		.under {   text-decoration: underline; } 
+		.highlight {   background: yellow;}
+	</style>
+	<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('p').addClass('red under');
+			
+			$('#removeClass').click(function() {
+				$('p:nth-child(odd)').removeClass('red under');
+			})
+		});
+	</script>	
+</head>
+<body>
+	<button id="removeClass">removeClass</button>
+	<button id="changeClass">changeClass</button>
+	<div id="div1">
+		<p>엘리먼트로부터</p>
+		<p>클래스를</p>
+		<p>추가하고</p>
+		<p>제거하는</p>
+		<p>연습하기</p>
+	</div>
+</body>
+</html>
+

@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<span id="simple1">simple</span>
+	<div id="simple1">jQuery</div>
+	<span id="simple1">Basic</span>
+	<div id="simple1">Example</div>
+</body>
+</html>

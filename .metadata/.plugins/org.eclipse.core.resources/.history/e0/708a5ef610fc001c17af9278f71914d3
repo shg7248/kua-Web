@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex03_location</title>
+</head>
+<script>
+	var now = new Date();
+	document.write(now.toLocaleString());
+</script>
+<body>
+
+</body>
+</html>

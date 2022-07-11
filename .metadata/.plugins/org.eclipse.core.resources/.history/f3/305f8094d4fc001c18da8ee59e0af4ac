@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex02_filter.html</title>
+<style>
+div {
+	width: 60px; height: 60px;
+	margin: 5px; float: left;
+	border: 2px green solid;
+}
+</style>
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		$('div').css('background', 'yellow');
+	});
+</script>
+</head>
+<body>
+	<div id="first"></div>	
+
+	<div id="second" class="middle"></div>
+	<div id="third"  class="middle"></div>
+	<div id="fourth" class="middle"></div>
+	<div id="fifth"  class="middle"></div>
+	
+	<div id="sixth"></div> 
+	
+	<p class="middle"></p>
+</body>
+</html>
+
+
+
+
+

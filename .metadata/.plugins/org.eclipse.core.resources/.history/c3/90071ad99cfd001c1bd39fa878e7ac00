@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script>
+   $(function() {
+	  
+	   var man = new Object();
+	   
+	   man.name = "song";
+	   man.age = "50";
+	   man.birthdate = new Date(72,9,1).toLocaleDateString();
+	   
+	   var jumsu = new Object();
+	   jumsu.kor = 30;
+	   jumsu.eng = 40;
+	   jumsu.math = 50;
+	   
+	   man.jumsu = jumsu;
+	   
+	   console.log("이름 : " + man.name);
+	   console.log("나이 : " + man.age);
+	   console.log("생일 : " + man.birthdate);
+	   console.log("국어점수 : " + man.jumsu.kor);
+	   console.log("영어점수 : " + man.jumsu.eng);
+	   console.log("수학점수 : " + man.jumsu.math);
+	   
+	   var woman = {
+			   name: '아이유',
+			   age: 50,
+			   birthdate: new Date(1987, 9, 2)
+	   };
+   });
+</script> 
+<body>
+
+</body>
+</html>

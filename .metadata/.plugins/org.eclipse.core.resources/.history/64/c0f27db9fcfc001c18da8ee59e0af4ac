@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ex06_live.html</title>
+	<style type="text/css">
+		p {
+			background: yellow;
+			font-weight: bold;
+			cursor: pointer;
+			padding: 5px;
+		}
+	</style>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var cnt = 0;
+			/* 
+			$('p').click(function() {
+				$(this).after('<p>Another ' + cnt++ + '</p>')
+			});
+			 */
+			 
+			$('p').live('mouseover', function() {
+				$(this).after('<p>Another ' + cnt++ + '</p>')
+				
+				if(cnt == 5) {
+					$('p').die();
+				}
+			});
+			 
+			// live : 이벤트 처리를 새로운 요소에 위임할 때 사용한다
+		})
+	</script>
+</head>
+<body>
+	<p>Click me!</p>
+	
+</body>
+</html>
+
+

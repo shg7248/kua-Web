@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+table {
+	width: 75%;
+}
+
+.selectedstyle {
+	color: red;
+	font-size: 20pt;
+	background-color: pink;
+}
+.selectedstyle2 {
+	color:green;
+	font-size: 20pt;
+	background-color: yellow;
+}
+.tdselectedstyle {
+	color:yellow;
+	font-size: 20pt;
+	background-color: blue;
+}
+</style>
+
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		alert(1);
+	});
+	
+</script>
+</head>
+<body>
+
+</body>
+</html>

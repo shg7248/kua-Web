@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// document가 준비되었을 떄 하고싶은일
+		
+		// 태그를 객체화 시킴
+		$('span').addClass('spotlight');
+		
+		$('div').addClass('redText');
+		
+		$('#simple1').addClass('largeText');
+		
+		document.querySelector('.simple1').classList.add('under');
+		
+		$('#simple2').css('color', 'green').addClass('under');
+	});
+	
+</script>
+</head>
+<body>
+	
+</body>
+</html>

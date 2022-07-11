@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ex06_live.html</title>
+	<style type="text/css">
+		p {
+			background: yellow;
+			font-weight: bold;
+			cursor: pointer;
+			padding: 5px;
+		}
+	</style>
+	<script type="text/javascript" src="../js/jquery.js"></script>
+	<script type="text/javascript">
+		$(function() {
+			var cnt = 0;
+			/* 
+			$('p').click(function() {
+				$(this).after('<p>Another ' + cnt++ + '</p>')
+			});
+			 */
+			 
+			$('p').live(function() {
+				$(this).after('<p>Another ' + cnt++ + '</p>')
+			});
+		})
+	</script>
+</head>
+<body>
+	<p>Click me!</p>
+	
+</body>
+</html>
+
+

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Ex03_location</title>
+</head>
+<script>
+	var now = new Date();
+	document.write(now.toLocaleString());
+</script>
+<body>
+	<br>
+	<input type="button" value="현재 시간은?" onclick="location.reload()"> <br>
+	<input type="button" value="다음" onclick="location.reload()">
+</body>
+</html>

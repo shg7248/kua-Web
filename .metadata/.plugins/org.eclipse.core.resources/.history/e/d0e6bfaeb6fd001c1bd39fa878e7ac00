@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		
+		$.ajax({
+			url: 
+		});
+	});
+
+</script>   
+</head>
+<body>
+	<h3>과일의 특성 조사</h3>
+	<table id="fruit" border=1></table>
+</body>
+</html>

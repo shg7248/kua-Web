@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// document가 준비되었을 떄 하고싶은일
+		
+		
+	});
+	
+</script>
+</head>
+<body>
+	<p>
+		<em>one</em>
+		<em>two</em>
+		<em>three</em>
+	</p>
+</body>
+</html>

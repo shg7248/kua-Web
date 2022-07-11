@@ -1,0 +1,5 @@
+1. 캐릭터셋 자동 설정하는 방법 : 
+Window - Preferences - Web - HTML Files - Encoding을 UTF-8로 변경
+
+2. 내부브라우저/외부브라우저 변경 방법:
+Window - Web browser - 아무거나 선택

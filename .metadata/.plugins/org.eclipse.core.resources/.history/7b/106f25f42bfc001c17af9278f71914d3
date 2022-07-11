@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+		// document가 준비되었을 떄 하고싶은일
+		
+		$('p em').css('background-color', 'yellow')
+				.css('border', '2pt solid #f00')
+				.each(function() {
+					
+				});
+		
+		$('div > em').css('background-color', 'cyan');
+	});
+	
+</script>
+</head>
+<body>
+	<p>
+		<em>one</em>
+		<em>two</em>
+		<span><em>three</em></span>
+	</p>
+	
+	<div>
+		<em>four</em>
+		<span><em>five</em></span>
+		<em>six</em>
+	</div>
+	
+	<hr>
+	result1 영역 <br>
+	<span class="result1"></span>
+	
+	result2 영역 <br>
+	<span class="result2"></span>
+</body>
+</html>

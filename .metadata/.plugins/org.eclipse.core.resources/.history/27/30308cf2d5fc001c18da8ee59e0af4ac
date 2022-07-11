@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div {
+		float: left;
+	}
+</style>
+</head>
+<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+	});
+</script>
+<body>
+	<div><img src="./../images/tara01.jpg" width="90" height="90"></div>
+	<div><img src="./../images/tara02.jpg" width="90" height="90"></div>
+	<div><img src="./../images/tara03.jpg" width="90" height="90"></div>
+</body>
+</html>

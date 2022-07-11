@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	
+	// max : 최대값
+	document.write("1: " + Math.max(10, 20, 3, 9) + "<br>");	// 1: 20
+	
+	// min : 최소값
+	document.write("2: " + Math.min(10, 20, 3, 9) + "<br>");	// 2: 3
+	
+	// round : 반올림
+	document.write("3: " + Math.round(1.7) + "<br>");			// 3: 1
+	document.write("4: " + Math.round(1.3) + "<br>");
+	
+	// ceil : 올림
+	document.write("5: " + Math.ceil(1.3) + "<br>");
+	
+	//floor : 내림
+	document.write("6: " + Math.floor(1.7) + "<br>");
+	
+	//parseInt : 내림과 기능이 같다.
+	document.write("7: " + parseInt(1.7) + "<br>");
+	
+	// random : 0.0이상 1.0미만의 실수를 랜덤으로 리턴한다.
+	var su = parseInt(Math.random() * 45) + 1;
+	document.write("8: " + su + "<br>");
+	
+	var count = 0;
+	do {
+		input = prompt("1~45 사이의 수 입력 : ", "");
+		count += 1;
+		if(input > su) {
+			alert('더 작은 수 입력하세요');
+		}
+		else if(input < su) {
+			alert('더 큰 수 입력하세요');
+		}
+		else {
+			alert('맞췄습니다.');
+			break;	
+		}
+	} while(true);
+	
+	document.write("시도한 횟수 : " + count);
+	
+	/* (int)(Math.random() * 45) + 1 */
+</script>
+</body>
+</html>

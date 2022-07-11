@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>Ex02_attr_imageRotation.html</title>
+	<style type="text/css">
+		#left_side div{
+			float: left; 
+			margin-right: 10px;
+		}
+
+		#imgsrc{
+			width: 300px ;
+			height: 300px ;
+		}
+		#left_side2{
+			clear : left;
+		} 
+	</style>
+	<script type="text/javascript" src="/04_JQuery/js/jquery.js"></script>
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$('#left_side2').click(function() {
+ 				var a = Array.from($('img'));
+				a.unshift(a.pop()); 
+				
+				$('img').each(function(i, v) {
+					(function(i, v) {
+						console.log(i)
+						$(this).attr('src', a[i].attributes.src.value);
+					})(i, v)
+				})
+			});
+		});
+	</script>
+</head>	
+<body>
+	<div id='left_side'>
+		<div><img src="./../images/tara01.jpg" width="90" height="90"></div>
+		<div><img src="./../images/tara02.jpg" width="90" height="90"></div>
+		<div><img src="./../images/tara03.jpg" width="90" height="90"></div>
+	</div>
+	<div id='left_side2'>
+		<input id="clock1" type="button" value="버튼">
+	</div>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+

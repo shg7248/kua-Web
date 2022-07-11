@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<p>중식메뉴</p>
+	<ul>
+		<li>짜장면</li>
+		<li>짬뽕</li>
+		<li>팔보채</li>
+		<li>군만두</li>
+	</ul>
+</body>
+</html>

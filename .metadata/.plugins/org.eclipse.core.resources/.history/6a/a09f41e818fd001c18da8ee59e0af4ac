@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+
+	ul {
+		
+	}
+
+	li {
+		list-style: none;
+	}
+</style>
+</head>
+<body>
+	<header class="header">
+		<div class="header__inner">
+			<div class="nav">
+				<ul class="nav__list">
+					<li class="nav__item">
+						<span>MENU1</span>
+					</li>
+					<li class="nav__item">
+						<span>MENU2</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+</body>
+</html>

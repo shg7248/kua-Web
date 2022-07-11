@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	div {
+		height: 100px;
+		background-color: red;
+		display:inline-block;
+		margin: 0px auto;
+	}
+</style>
+</head>
+<body>
+	<div>
+		dsfdsfsdfds
+	</div>
+</body>
+</html>

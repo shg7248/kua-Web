@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<div>
+	<a href="#" id="menu1">메뉴 보기 1</a><p>
+	<span id="message1"></span>
+</div>
+
+<div>
+	<a href="#" id="menu2">메뉴 보기 2</a><p>
+	<span id="message2"></span>
+</div>
+<div style="clear:left"> 
+	<h3>load 예제입니다.</h3>
+</div>
+</body>
+</html>

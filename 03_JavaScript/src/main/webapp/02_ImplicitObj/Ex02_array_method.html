@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<script type="text/javascript">
+	var a = new Array('kim', 'shin', 'park');
+	var b = ['lee', 'son', 'choi', 'won'];
+	
+	var all = a.concat(b);
+	document.write(all  + "<br>");
+	
+	document.write("<hr>");
+	
+	document.write(all.length + "<br>");
+	
+	document.write("<hr>");
+	
+	var sliceArr = all.slice(1, 3);
+	document.write(sliceArr + "<br>");
+	
+	document.write("<hr>");
+	
+	allSort = all.sort();
+	document.write(allSort);
+	
+	document.write("<hr>");
+	
+	allSortReverse = allSort.reverse();
+	document.write(allSortReverse);
+</script>
+</body>
+</html>

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<style type="text/css">
+	div {
+		float: left;
+	}
+</style>
+<script type="text/javascript" src="../js/jquery.js"></script>
+<script>
+	$(function() {
+		$('#menu1').click(function() {
+			$.ajax({
+				url: "menu.html",		// 요청 url
+				dataType: "html",		// 응답타입(반환타입)
+				success: function(data) {	// 응답이 왔을 때
+					$('#message1').html(data);
+				},
+				error: function() {		// 응답이 오지 않았을 때
+					alert("실패");
+				}
+			})
+		});
+		
+		$('#menu2').click(function() {
+			/* $('#message2').load('menu.html li'); */
+		});
+	});
+</script>
+<body>
+
+<div>
+	<a href="#" id="menu1">메뉴 보기 1</a><p>
+	<span id="message1"></span>
+</div>
+
+<div>
+	<a href="#" id="menu2">메뉴 보기 2</a><p>
+	<span id="message2"></span>
+</div>
+
+<div style="clear:left"> 
+	<h3>load 예제입니다.</h3>
+</div>
+
+</body>
+</html>
